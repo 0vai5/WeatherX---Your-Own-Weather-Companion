@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faWind } from '@fortawesome/free-solid-svg-icons'
 const Weather = ({city, date, temperature, desc, feelsLike, visibility, windSpeed }) => {
     return (
-        <div className="bg-[#FAFAFA] px-10 py-3 rounded-xl">
+        <div className="bg-[#FAFAFA] px-10 py-3 rounded-xl mb-10">
             <div className='flex justify-between items-center text-[#161616]'>
                 <h1 className='text-xl'>{city}</h1>
                 <h1 className='text-xl'>{date}</h1>
@@ -22,7 +22,7 @@ const Weather = ({city, date, temperature, desc, feelsLike, visibility, windSpee
                 <div className="flex flex-col justify-center text-[#696969]">
                     <div className='flex items-start  justify-between gap-3'>
                         <FontAwesomeIcon className='text-lg' icon={faEye} />
-                        <span className='font-light'> {visibility} %</span>
+                        <span className='font-light'> {visibility} km</span>
                     </div>
                     <div className='flex items center justify-between gap-3'>
                         <FontAwesomeIcon className='text-lg' icon={faWind} />
