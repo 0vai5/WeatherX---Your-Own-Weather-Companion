@@ -19,7 +19,7 @@ const Weather = ({city, date, temperature, desc, feelsLike, visibility, windSpee
                         <span className='font-light text-[#696969] text-lg'>{feelsLike} °</span>
                     </div>
                 </div>
-                <div className="flex  flex-col  sm:gap-3 justify-center items-center text-[#696969]">
+                <div className="flex  flex-col  sm:gap-3 relative sm:right-6 justify-center items-center text-[#696969]">
                     <div className='flex items-start  justify-between gap-3'>
                         <FontAwesomeIcon className='text-lg' icon={faEye} />
                         <span className='font-light'> {visibility} km</span>

@@ -48,6 +48,12 @@ const App = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      handleSearch();
+    }
+  };
+
   const formattedDate = weatherData
     ? dateFormat(weatherData.dt * 1000, "d.m.yyyy")
     : null;
@@ -66,6 +72,7 @@ const App = () => {
               placeholder="Enter City"
               value={searchContent}
               onChange={(e) => setSearchContent(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
             <input
               type="button"
